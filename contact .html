@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +7,138 @@
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href="home%20.css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0
+
+        }
+
+        .contact-container {
+            width: 100%;
+            max-width: 1100px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin: 40px auto;
+        }
+
+        .main-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #6b2d18; /* Matching the deep bakery brown scheme */
+            margin-bottom: 10px;
+        }
+
+        .sub-heading {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .content-split {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Left Side: Info */
+        .info-panel {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .business-title {
+            font-size: 1.5rem;
+            color: #6b2d18;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #222;
+        }
+
+        /* Social Media Utility Buttons */
+        .social-container {
+            margin-top: 30px;
+            display: flex;
+            gap: 12px; /* Fixed button layout overlapping gap issue */
+        }
+
+        .social-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .social-btn:hover {
+            opacity: 0.9;
+        }
+
+        .instagram { background-color: #b5472b; }
+        .facebook { background-color: #3b5998; }
+        .tiktok { background-color: #010101; }
+
+        /* Right Side: Google Maps Element */
+        .map-panel {
+            flex: 1;
+            min-width: 300px;
+            height: 350px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        .map-panel iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Mobile Viewport Breakpoint Adjustments */
+        @media (max-width: 768px) {
+            .content-split {
+                flex-direction: column;
+            }
+            .map-panel {
+                height: 300px;
+            }
+        }
+    </style>
+
 </head>
-
 <body>
-
-    <!-- HEADER -->
+ <!-- HEADER -->
     <header>
+        
         <nav>
+            
             <h1 class="logo">Coop@Cafe</h1>
 
             <ul>
@@ -24,30 +148,57 @@
                 <li><a href="gallery%20page%20.html">Gallery</a></li>
                 <li><a href="contact%20.html">Contact</a></li>
             </ul>
+            
         </nav>
     </header>
+    <div class="contact-container">
+        
+        <h1 class="main-heading">Contact Us</h1>
+        <p class="sub-heading">(Reach us for orders and enquiries)</p>
 
-<section class="contact">
-    <div style="text-align: center;">
-    <h1>Contact Us</h1>
+        <div class="content-split">
+            
+            <!-- Left Panel: Company Context Details -->
+            <div class="info-panel">
+                <h2 class="business-title">Coop@Cafe</h2>
+                
+                <p class="info-item">
+                    <span class="info-label">Address:</span> Kafeteria Dewan Naib Canselor UNISEL, Universiti Selangor (UNISEL Kampus, jalan timur tambahan, 45600 Batang Berjuntai, Selangor
+                </p>
+                <p class="info-item">
+                    <span class="info-label">Phone:</span> 0103572840
+                </p>
+                <p class="info-item">
+                    <span class="info-label">Email:</span> info/coopcafe@gmail.com
+                </p>
+                <p class="info-item">
+                    <span class="info-label">
+                        Operating Hours:
+                        <br>7AM - 11PM MON-FRI
+                        <br> 9.30AM - 9.30PM SAT-SUN
+                    </span>
+                </p>
 
-    <p>Email: koperasiunisel@gmail.com</p>
+                <div class="social-container">
+                    <a href="https://www.instagram.com/danus_0205?igsh=cHB4cHUzcGhyOHdq" class="social-btn instagram" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/share/1EqDxdcrQD/?mibextid=wwXIfr" class="social-btn facebook" target="_blank">Facebook</a>
+                    <a href="https://www.tiktok.com/@futureflexbyvaish?_r=1&_t=ZS-97aAJcAcNYD" class="social-btn tiktok" target="_blank">TikTok</a>
+                </div>
+            </div>
 
-    <p>Phone: ONLY DINE IN</p>
+            <!-- Right Panel: Live Dynamic Map Area Embed -->
+            <div class="map-panel">
+                
+<iframe title="google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.710602266017!2d101.439889!3d3.4205083999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc67727b6c81af%3A0xa2ce5373301f3004!2sCafe%20Hostel%20Unisel!5e0!3m2!1sen!2smy!4v1782549625543!5m2!1sen!2smy"
+                
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
-    <p>Operating Hours:
-        <br>7AM - 11PM MON-FRI</p>
-        <p> 9.30AM - 9.30PM SAT-SUN</p>
+        </div>
     </div>
-</section>
-    
-<section class="map">
-
-<h2>Find Us</h2>
-
-<iframe title="google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.710602266017!2d101.439889!3d3.4205083999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc67727b6c81af%3A0xa2ce5373301f3004!2sCafe%20Hostel%20Unisel!5e0!3m2!1sen!2smy!4v1782549625543!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-</section>
 
 </body>
 </html>
